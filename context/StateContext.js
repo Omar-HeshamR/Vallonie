@@ -100,6 +100,7 @@ export const StateContext = ({ children }) => {
             ...cartProduct,
             quantity: cartProduct.quantity + quantity
           }
+          return cartProduct;
         })
   
         setCartItems(updatedCartItems);
